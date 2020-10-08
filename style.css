@@ -1,4 +1,10 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
+   div.container4 {
+        margin-top: 0rem;
+        padding: 0px;
+        font-size: 5px;
+    }
+
     div.socials{
         flex-direction: column;
         margin-top: 10px;
@@ -63,13 +69,37 @@ div.socials {
 #gh-img{
     max-height: 60px;
     padding: 0.3rem;
-    
-   
 }
 
 #li-img{
     max-height: 60px;
     padding: 0.3rem;
-   
 }
 
+
+
+.navbar-custom {
+    background-color: #1F2833;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #66FCF1;
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #C5C6C7;
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: green;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
