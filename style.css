@@ -39,8 +39,8 @@ div.container4 {
     font-size: 3.5rem;
 }
 hr {
-    color: #C5C6C7;
-    background-color: #C5C6C7;
+    color: #f54753;
+    background-color: #f54753;
     width: 50%;
 }
 
@@ -76,8 +76,8 @@ div.socials {
     padding: 0.3rem;
 }
 
-#myElement {
-    color: red;
+p {
+color: red;
 }
 
 

@@ -30,7 +30,7 @@
  /* change the brand and text color */
  .navbar-custom .navbar-brand,
  .navbar-custom .navbar-text {
-     color: #66FCF1;
+     color: #f54753;
  }
  /* change the link color */
  .navbar-custom .navbar-nav .nav-link {
@@ -39,7 +39,7 @@
  /* change the color of active or hovered links */
  .navbar-custom .nav-item.active .nav-link,
  .navbar-custom .nav-item:hover .nav-link {
-     color: #66FCF1;
+     color: #f54753;
  }
  .navbar.center .navbar-inner {
      text-align: center;
