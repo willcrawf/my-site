@@ -76,6 +76,9 @@ div.socials {
     padding: 0.3rem;
 }
 
+#myElement {
+    color: red;
+}
 
 
 .navbar-custom {
@@ -93,13 +96,30 @@ div.socials {
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: green;
+    color: #66FCF1;
 }
-
 .navbar.center .navbar-inner {
     text-align: center;
 }
 .navbar.center .navbar-inner .nav {
     display:inline-block;
     float: none;
+}
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
 }

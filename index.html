@@ -8,42 +8,56 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <link href="./style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will Crawford</title>
 </head>
 <body>
+<!-- Social Media -->
     <div class = "socials">
-        <a class = "social-icons" target="_blank" href = "http://www.github.com/willcrawf"><img id = "gh-img" src="/images/GH.png"></a>
-        <a class = "social-icons" target="_blank" href = "http://www.linkedin.com/in/will-crawford99/"><img id = "li-img" src="/images/LI.png"></a>
+        <a class = "social-icons hvr-grow" target="_blank" href = "http://www.github.com/willcrawf"><img id = "gh-img" src="/images/GH.png"></a>
+        <a class = "social-icons hvr-grow" target="_blank" href = "http://www.linkedin.com/in/will-crawford99/"><img id = "li-img" src="/images/LI.png"></a>
             
-            
+<!-- Header -->
     </div>
     <div class = "container4">
         <h1 id="name" class="vov fade-in-right f-10">Will Crawford</h1>
         <hr class="solid">  
-        <h2 id="SE" class="vov fade-in t-2">Software Engineer</h2>
+        <h2 id="SE" class="vov fade-in t-3"></h2>
         <br>
         <p id="message" class="vov fade-in t-4">Site is currently in the works. Come back soon to see what I've been working on.</p>
         <p id="message" class="vov fade-in t-4">In the mean time, check out my GitHub.</p>
     </div>
 
-        <div id = "nav" class="fixed-bottom">
-            <nav class="navbar navbar-expand-sm navbar-custom center">
-                <a class="navbar-brand" href="#">Learn about Me</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav center">
-                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">Features</a>
-                    <a class="nav-item nav-link" href="#">Pricing</a>
-                  </div>
-                </div>
-              </nav>
-        </div>
+    <!-- TypeWriter -->
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+  
+      new TypeIt('#SE', {
+          speed: Math.floor(Math.random() * (140 - 65) ) + 65,
+          loop: true
+      })
+      .type("Software Engineer", {delay: 3500})
+      .delete(null, {delay: 500})
+      .type("Divergent Thinker", {delay: 2500})
+      .delete(null, {delay: 500})
+      .type("Eager Learner", {delay: 2500})
+      .delete(null, {delay: 500})
+      .type("Passionate Collaborator", {delay: 2500})
+      .go();
+    </script>
+
+    <!--Navigation bar-->
+    <div id="nav-placeholder"> </div>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+        $.get("./nav/nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+    <!--end of Navigation bar-->
 </body>
 </html>
 
