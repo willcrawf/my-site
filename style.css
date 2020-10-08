@@ -1,3 +1,18 @@
+@media only screen and (max-width: 600px) {
+    div.socials{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    #li-img{
+        height: 95%;
+        width: 90%
+    }
+    #gh-img{
+        height: 95%;
+        width: 90%
+    }
+}
+
 div.container4 {
     background-color: #0B0C10;
     color: #66FCF1;
@@ -11,7 +26,11 @@ div.container4 {
     transform: translate(-50%, -50%) }
 
 #SE {
-    font-size: 1.4rem;
+    font-size: 2.9rem;
+}
+
+#name {
+    font-size: 3.5rem;
 }
 hr {
     color: #C5C6C7;
@@ -28,7 +47,7 @@ body {
 #message {
     margin-top: 2rem;
     padding: 0rem;
-    font-size: rem;
+    font-size: 1rem;
     color: #C5C6C7;
 }
 
@@ -36,17 +55,21 @@ div.socials {
     color: white;
     display: flex;
     justify-content: flex-start;
-    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+    margin: 0.6rem 0.1rem 0.6rem 2.6rem;
 }
 
 #gh-img{
-    height: 3rem;
-    width: 3rem;
-    margin: 0.8rem;
+    max-height: 60px;
+    padding: 0.3rem;
+    
+   
 }
 
 #li-img{
-    height: 3rem;
-    width: 3rem;
-    margin: 0.8rem 0.1rem 0.8rem 0.05rem;
+    max-height: 60px;
+    padding: 0.3rem;
+   
 }
+
