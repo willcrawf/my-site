@@ -36,8 +36,9 @@
     <script>
   
       new TypeIt('#SE', {
-          speed: Math.floor(Math.random() * (140 - 65) ) + 65,
-          loop: true
+        //   speed: Math.floor(Math.random() * (140 - 65) ) + 65,
+          loop: true,
+          lifeLike: true
       })
       .type("Software Engineer", {delay: 3500})
       .delete(null, {delay: 500})

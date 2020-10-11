@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+@media only screen and (max-width: 850px) {
+    div.container4 {
+         margin-top: 0rem;
+         padding: 0px;
+         font-size: 5px;
+     }
+ 
+     div.socials{
+         flex-direction: column;
+         margin-top: 10px;
+     }
+     #li-img{
+         height: 95%;
+         width: 90%
+     }
+     #gh-img{
+         height: 95%;
+         width: 90%
+     }
+ }
+ 
+ body {
+     background-color: #0B0C10;
+     font-family: 'Abril Fatface', cursive;
+     font-family: 'Coda', cursive;
+ }
+ 
+
+
+ /* change the brand and text color */
+ .navbar-custom .navbar-brand,
+ .navbar-custom .navbar-text {
+     color: #f54753;
+ }
+ /* change the link color */
+ .navbar-custom .navbar-nav .nav-link {
+     color: #C5C6C7;
+ }
+ /* change the color of active or hovered links */
+ .navbar-custom .nav-item.active .nav-link,
+ .navbar-custom .nav-item:hover .nav-link {
+     color: #f54753;
+ }
+ .navbar.center .navbar-inner {
+     text-align: center;
+ }
+ .navbar.center .navbar-inner .nav {
+     display:inline-block;
+     float: none;
+ }
+
+ #aboutIcon {
+     margin: 20px;
+ }
+ /* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
