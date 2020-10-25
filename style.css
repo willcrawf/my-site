@@ -18,7 +18,10 @@
         width: 90%
     }
 }
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 div.container4 {
     background-color: #0B0C10;
     color: #66FCF1;

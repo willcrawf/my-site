@@ -19,6 +19,7 @@
      }
  }
 
+html{scroll-behavior:smooth}
 #cardText {
     color: black;
 }
@@ -149,13 +150,13 @@ hr {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
   }
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
+  .sidenav a:hover, a:active {
+    color: #66FCF1;
   }
   
   /* Style page content */
@@ -168,4 +169,11 @@ hr {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .sidenav > .active > a { 
+        background-color: blue; 
+    }
   }
+
+.sidenav > .active > a { 
+    background-color: blue; 
+}

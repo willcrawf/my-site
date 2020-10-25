@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+    <script src="jquery.localscroll.js" type="text/javascript"></script> 
+    <script src="jquery.scrollTo.js" type="text/javascript"></script> 
+    <script src="./script.js"></script>
     <link href="./style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta charset="UTF-8">
@@ -24,10 +29,20 @@
 
     <!-- Side NavBar -->
     <div class="sidenav">
+        <!-- <span id="sidenavTitle">
+            <a href = "projects">Projects</a>
+        </span> -->
+
         <a href="#blackjack">Blackjack</a>
         <a href="#budget">Budgeter</a>
         <a href="#googlephotos">Photos API</a>
         <a href="#fishyfishy">Fish Tracker</a>
+        <a href="#hackathon">Hackathon</a>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $('#nav').localScroll({duration:800});
+            });
+        </script>
       </div>
 
       
@@ -35,7 +50,7 @@
     <!-- Cards -->
     <div id ="cardsDiv">
     <!-- Card 1 -->
-    <div id="blackjack" class="card" style="width: 60%;">
+    <div id="blackjack" class="card border-dark mb-3" style="width: 40%;">
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Blackjack</h5>
             <p class="card-text">Project one for General Assembly (the program I was certified in for Software Engineering) I chose Blackjack. </p>
@@ -57,7 +72,7 @@
       </div>
       <br>
     <!-- Card 2 -->
-    <div id="budget" class="card" style="width: 60%;">
+    <div id="budget" class="card border-primary mb-3" style="width: 40%;">
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Budget and Finance Tracker</h5>
             <p class="card-text">Project two for General Assembly, I made a project called Cash Cow - a budget tracker. </p>
@@ -81,7 +96,7 @@
       </div>
       <br>
       <!-- Card 3 -->
-      <div id="googlephotos" class="card" style="width: 60%;">
+      <div id="googlephotos" class="card" style="width: 40%;">
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Google Photos API App (Group Project)</h5>
             <p class="card-text">Project three for General Assembly, my group made a project called Places in Time which lets users get info about their memories.</p>
@@ -109,7 +124,7 @@
       </div>
       
       <!-- Card 4 -->
-      <div id="fishyfishy" class="card" style="width: 60%;">
+      <div id="fishyfishy" class="card" style="width: 40%;">
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Fish Tracker</h5>
             <p class="card-text">Project four for General Assembly, I made a simple Django app called Fishy-Fishy that allows you to track fish.</p>
