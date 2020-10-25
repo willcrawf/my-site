@@ -15,23 +15,34 @@
     <title>Projects</title>
 </head>
 <body>
+    <!-- Header -->
     <div id = "header">
         <h1>My Projects</h1>
         <p>Here's some of the stuff I've been passionate about making</p>
         <hr>
     </div>
 
+    <!-- Side NavBar -->
+    <div class="sidenav">
+        <a href="#blackjack">Blackjack</a>
+        <a href="#budget">Budgeter</a>
+        <a href="#googlephotos">Photos API</a>
+        <a href="#fishyfishy">Fish Tracker</a>
+      </div>
+
+      
+
     <!-- Cards -->
     <div id ="cardsDiv">
     <!-- Card 1 -->
-    <div class="card" style="width: 60%;">
+    <div id="blackjack" class="card" style="width: 60%;">
         <div id = "cardText" class="card-body">
-            <h5 id="cardTitle" class="card-title">Black Jack</h5>
+            <h5 id="cardTitle" class="card-title">Blackjack</h5>
             <p class="card-text">Project one for General Assembly (the program I was certified in for Software Engineering) I chose Blackjack. </p>
             <img class="card-img-top" src="https://i.imgur.com/pPOaZwd.png" alt="Card image cap">
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">This Black Jack program was made using: 
+            <li class="list-group-item">This Blackjack program was made using: 
                 <ul>
                     <li>HTML/CSS</li>
                     <li>JavaScript</li>
@@ -46,7 +57,7 @@
       </div>
       <br>
     <!-- Card 2 -->
-    <div class="card" style="width: 60%;">
+    <div id="budget" class="card" style="width: 60%;">
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Budget and Finance Tracker</h5>
             <p class="card-text">Project two for General Assembly, I made a project called Cash Cow - a budget tracker. </p>
@@ -70,7 +81,7 @@
       </div>
       <br>
       <!-- Card 3 -->
-      <div class="card" style="width: 60%;">
+      <div id="googlephotos" class="card" style="width: 60%;">
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Google Photos API App (Group Project)</h5>
             <p class="card-text">Project three for General Assembly, my group made a project called Places in Time which lets users get info about their memories.</p>
@@ -96,8 +107,32 @@
             <a target="_blank" href="https://github.com/lex-c/bigpint" class="card-link">GitHub</a>
         </div>
       </div>
+      
+      <!-- Card 4 -->
+      <div id="fishyfishy" class="card" style="width: 60%;">
+        <div id = "cardText" class="card-body">
+            <h5 id="cardTitle" class="card-title">Fish Tracker</h5>
+            <p class="card-text">Project four for General Assembly, I made a simple Django app called Fishy-Fishy that allows you to track fish.</p>
+            <img class="card-img-top" src="https://camo.githubusercontent.com/f8ac5bdff4da09740b49e3d039c3a7bdb623ce2e/68747470733a2f2f692e696d6775722e636f6d2f65566a37536a4c2e706e67" alt="Card image cap">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">This program was made using: 
+                <ul>
+                    <li> Python </li>
+                    <li> Django </li>
+                    <li> HTML/CSS </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="card-body">
+            <a target="_blank" href="https://fishyfishy-py.herokuapp.com/" class="card-link">Site</a>
+            <a target="_blank" href="https://github.com/willcrawf/fishy-fishy" class="card-link">GitHub</a>
+        </div>
     </div>
-    <!--Navigation bar-->   
+</div>
+
+</div>
+<!--Navigation bar-->   
     <div id="nav-placeholder"> </div>
     <script src="//code.jquery.com/jquery.min.js"></script>
     <script>
