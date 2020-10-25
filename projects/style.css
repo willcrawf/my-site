@@ -44,7 +44,13 @@
  #SE {
      font-size: 2.9rem;
  }
- 
+ .card{
+     margin: 0 auto; /* Added */
+     float: none; /* Added */
+     margin-bottom: 100px; /* Added */
+ }
+
+
  #name {
      font-size: 3.5rem;
  }
