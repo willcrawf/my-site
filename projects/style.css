@@ -177,6 +177,3 @@ hr {
 .sidenav > .active > a { 
     background-color: blue; 
 }
-.card-body {
-    box-shadow: 0 0 20px 8px rgba(102, 252, 241);
-}
