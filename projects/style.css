@@ -18,9 +18,18 @@
          width: 90%
      }
  }
- * {
-     color: white;
- }
+
+html{scroll-behavior:smooth}
+#cardText {
+    color: black;
+}
+#cardTitle {
+    font-size: xx-large;
+}
+
+#header {
+    color: white;
+}
  div.container4 {
      background-color: #0B0C10;
      color: #66FCF1;
@@ -36,7 +45,13 @@
  #SE {
      font-size: 2.9rem;
  }
- 
+ .card{
+     margin: 0 auto; /* Added */
+     float: none; /* Added */
+     margin-bottom: 100px; /* Added */
+ }
+
+
  #name {
      font-size: 3.5rem;
  }
@@ -104,3 +119,61 @@
      display:inline-block;
      float: none;
  }
+
+hr {
+     background-color: #66FCF1;
+ }
+
+ h1, p {
+     text-align: center;
+ }
+
+ h1 {
+     margin-top: 2rem;
+ }
+
+ /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover, a:active {
+    color: #66FCF1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .sidenav > .active > a { 
+        background-color: blue; 
+    }
+  }
+
+.sidenav > .active > a { 
+    background-color: blue; 
+}
