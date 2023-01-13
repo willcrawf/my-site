@@ -28,19 +28,17 @@ html{scroll-behavior:smooth}
 }
 
 #header {
-    color: white;
+    color: #BDBDBD;
 }
  div.container4 {
-     background-color: #0B0C10;
-     color: #66FCF1;
+     background-color: #F5F5F5;
+     color: #BDBDBD;
      border-radius: 1em;
      padding: 1em;
-     position: absolute;
+     /* position: absolute; */
      text-align: center;
-     top: 50%;
-     left: 50%;
-     margin-right: -50%;
-     transform: translate(-50%, -50%) }
+     /* margin-right: -50%; */
+      }
  
  #SE {
      font-size: 2.9rem;
@@ -48,21 +46,21 @@ html{scroll-behavior:smooth}
  .card{
      margin: 0 auto; /* Added */
      float: none; /* Added */
-     margin-bottom: 100px; /* Added */
  }
 
+ 
 
  #name {
      font-size: 3.5rem;
  }
  hr {
-     color: #C5C6C7;
-     background-color: #C5C6C7;
+     color: #FFFFFF;
+     background-color: #FFFFFF;
      width: 50%;
  }
  
  body {
-     background-color: #0B0C10;
+     background-color: #F5F5F5;
      font-family: 'Abril Fatface', cursive;
      font-family: 'Coda', cursive;
  }
@@ -71,7 +69,7 @@ html{scroll-behavior:smooth}
      margin-top: 2rem;
      padding: 0rem;
      font-size: 1rem;
-     color: #C5C6C7;
+     color: #FFFFFF;
  }
  
  div.socials {
@@ -96,21 +94,21 @@ html{scroll-behavior:smooth}
  
  
  .navbar-custom {
-     background-color: #1F2833;
+     background-color: #009688;
  }
  /* change the brand and text color */
  .navbar-custom .navbar-brand,
  .navbar-custom .navbar-text {
-     color: #66FCF1;
+     color: #BDBDBD;
  }
  /* change the link color */
  .navbar-custom .navbar-nav .nav-link {
-     color: #C5C6C7;
+     color: #FFFFFF;
  }
  /* change the color of active or hovered links */
  .navbar-custom .nav-item.active .nav-link,
  .navbar-custom .nav-item:hover .nav-link {
-     color: #66FCF1;
+     color: #BDBDBD;
  }
  .navbar.center .navbar-inner {
      text-align: center;
@@ -121,7 +119,7 @@ html{scroll-behavior:smooth}
  }
 
 hr {
-     background-color: #66FCF1;
+     background-color: #BDBDBD;
  }
 
  h1, p {
@@ -144,7 +142,45 @@ hr {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
   }
-  
+
+    /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .sidenav {
+        display: none;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+
+}
+    
+#cardsDiv {
+    margin-bottom: 150px;
+}
+
+@media (min-width: 1281px) {
+    .card {
+        width: 40%;
+    }
+}
+@media (min-width: 767px) and (max-width: 1281px) {
+    #header {
+        /* width: 81%; */
+        padding-left: 160px;
+
+        /* float: right; */
+    }
+
+    #cardsDiv {
+        /* width: 81%; */
+        padding-left: 160px
+        /* float: right; */
+    }
+    
+}  
+
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -156,7 +192,7 @@ hr {
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover, a:active {
-    color: #66FCF1;
+    color: #BDBDBD;
   }
   
   /* Style page content */

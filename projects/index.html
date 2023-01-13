@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Coda&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Coda&family=Monoton&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
-    <script src="jquery.localscroll.js" type="text/javascript"></script> 
-    <script src="jquery.scrollTo.js" type="text/javascript"></script> 
-    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>    <script src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="./main.js"></script>
     <link href="./style.css" rel="stylesheet" type="text/css">
-    <meta charset="UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
@@ -29,32 +24,111 @@
 
     <!-- Side NavBar -->
     <div class="sidenav">
-        <!-- <span id="sidenavTitle">
-            <a href = "projects">Projects</a>
-        </span> -->
-
+        <a href="#tetc">TETC</a>
+        <a href="#encounter">Encounter</a>
+        <a href="#first5">First 5</a>
         <a href="#blackjack">Blackjack</a>
         <a href="#budget">Budgeter</a>
         <a href="#googlephotos">Photos API</a>
         <a href="#fishyfishy">Fish Tracker</a>
-        <a href="#hackathon">Hackathon</a>
-        <script type="text/javascript">
-            $(document).ready(function() {
-            $('#nav').localScroll({duration:800});
-            });
-        </script>
+        <!-- <a href="#hackathon">Hackathon</a> -->
       </div>
 
-      
+<!-- Cards -->
+<div id ="cardsDiv">
 
-    <!-- Cards -->
-    <div id ="cardsDiv">
+    <!-- TETC  -->
+    <div id="tetc" class="card" >
+        <div id = "cardText" class="card-body">
+            <h5 id="cardTitle" class="card-title">Tony Evans Training Center (TETC)</h5>
+            <p class="card-text">
+            The most involved project I had working at Crowd Hub. The Tony Evans Training Center (TETC) provides online courses and resources to help people learn and apply their faith to all areas of life. The courses, which feature video and audio teaching from Dr. Tony Evans, are accessible through the TETC website or mobile apps on iOS and Android. They provide an interactive and community-driven learning experience with opportunities to earn badges and track progress.
+            </p>
+            <img class="card-img-top" src="../images/TETC.png" alt="Card image cap">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">My direct contributions: 
+                <ul>
+                    <li>Stripe integration using custom webhooks</li>
+                    <li>Custom “student tracker” for moderators to track and moderate students’ comments, track progress, direct messaging, and more using HTML/Sass, JavaScript, php, SQL</li>
+                    <li>Cordova custom routing for all three platforms</li>
+                    <li>Managed resources using Amazon S3 bucket and integrated custom compiler into platform</li>
+                    <li>Custom HTML canvas featuring a downloadable certificate</li>
+                    <li>Performance improvements and defect fixes</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="card-body">
+          <a target="_blank" href="https://tonyevanstraining.org/" class="card-link">Website</a>
+          <a target="_blank" href="https://apps.apple.com/us/app/tony-evans-training-center/id1234345410" class="card-link">iOS Link</a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.urbanalternative.tetc&hl=en_US&gl=US&pli=1" class="card-link">Android Link</a>
+        </div>
+      </div>
+      <br>
+
+    <!-- Encountering Peace  -->
+    <div id="encounter" class="card" >
+        <div id = "cardText" class="card-body">
+            <h5 id="cardTitle" class="card-title">Encountering Peace</h5>
+            <p class="card-text">
+                I worked extensively on Encountering Peace, as well. Encounter is a Christian non-profit organization that provides biblical meditations and resources to help individuals slow down and connect with God. They do not charge a subscription fee and rely on donations from listeners to keep their content available for free. The goal of Encounter is to help individuals move from hectic to harmony in their spiritual walks. They offer their content through a mobile app, website, and other platforms.
+            </p>
+            <!-- IMAGE -->
+            <img class="card-img-top" src="../images/Encounter.png" alt="Card image cap">
+
+        <!-- LIST -->
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">My direct contributions: 
+                <ul>
+                    <li>Using ​​JavaScript/HTML/Sass, updated styling, fixed major bugs throughout the platform while working closely with teammates to test the entire app before release on all platforms. </li>
+                    <li>Cordova custom routing for all three platforms</li>
+                    <li>Managed resources using Amazon S3 bucket and integrated custom compiler into platform</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- LINKS -->
+        <div class="card-body">
+          <a target="_blank" href="https://encounteringpeace.com/" class="card-link">Website</a>
+          <a target="_blank" href="https://apps.apple.com/us/app/encountering-peace-meditation/id1528992184" class="card-link">iOS Link</a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.crowdhubapps.encounter&hl=en_IE&gl=US" class="card-link">Android Link</a>
+        </div>
+      </div>
+      <br>
+
+    <!-- First5  -->
+    <div id="first5" class="card" >
+        <div id = "cardText" class="card-body">
+            <h5 id="cardTitle" class="card-title">First5</h5>
+            <p class="card-text">
+                First5 is a mobile app and website that offers daily devotions and biblical content to help individuals start their day with focus on God. The app and website is provided by Proverbs 31 Ministries, a Christian non-profit organization that aims to inspire and encourage women in their faith journey. The devotions are short, typically 5 minutes or less, making it easy for individuals to fit into their daily routine. Each devotion includes a Bible verse, reflection, and prayer, to help individuals connect with God and set their intentions for the day. Additionally, First5 offers a range of resources including a journal, study guides and a community forum for users to share their experiences and support one another in their spiritual growth. The goal of First5 is to help individuals start their day with a deeper connection to God and a renewed sense of purpose.
+            </p>
+            <img class="card-img-top" src="../images/First5.png" alt="Card image cap">
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">My direct contributions: 
+                <ul>
+                    <li>Created a favorites page which stores all of the user’s favorite bible passages all in one place</li>
+                    <li>Incorporated a custom media player allowing the user to play audio and podcasts throughout the app</li>
+                    <li>Improved, adjusted, and fixed styling throughout the entire app</li>
+                    <li>Responsible for release new builds to staging and production</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="card-body">
+          <a target="_blank" href="https://first5.org/" class="card-link">Website</a>
+          <a target="_blank" href="https://apps.apple.com/us/app/first-5/id997457664" class="card-link">iOS Link</a>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.crowdhub.first5&hl=en_US&gl=US" class="card-link">Android Link</a>
+        </div>
+      </div>
+      <br>
+
     <!-- Card 1 -->
-    <div id="blackjack" class="card border-dark mb-3" style="width: 40%;">
+    <div id="blackjack" class="card" >
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Blackjack</h5>
             <p class="card-text">Project one for General Assembly (the program I was certified in for Software Engineering) I chose Blackjack. </p>
-            <img class="card-img-top" src="https://i.imgur.com/pPOaZwd.png" alt="Card image cap">
+            <img class="card-img-top" src="../images/Blackjack.png" alt="Card image cap">
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">This Blackjack program was made using: 
@@ -71,12 +145,13 @@
         </div>
       </div>
       <br>
+
     <!-- Card 2 -->
-    <div id="budget" class="card border-primary mb-3" style="width: 40%;">
+    <div id="budget" class="card" >
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Budget and Finance Tracker</h5>
             <p class="card-text">Project two for General Assembly, I made a project called Cash Cow - a budget tracker. </p>
-            <img class="card-img-top" src="https://i.imgur.com/KRoYCNY.png" alt="Card image cap">
+            <img class="card-img-top" src="../images/CashCow.png" alt="Card image cap">
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">This program was made using: 
@@ -90,17 +165,18 @@
           </li>
         </ul>
         <div class="card-body">
-            <a target="_blank" href="https://thecashcow.herokuapp.com/" class="card-link">Site</a>
+            <!-- <a target="_blank" href="https://thecashcow.herokuapp.com/" class="card-link">Site</a> -->
             <a target="_blank" href="https://github.com/willcrawf/Cash-Cow" class="card-link">GitHub</a>
         </div>
       </div>
       <br>
+
       <!-- Card 3 -->
-      <div id="googlephotos" class="card" style="width: 40%;">
+      <div id="googlephotos" class="card" >
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Google Photos API App (Group Project)</h5>
             <p class="card-text">Project three for General Assembly, my group made a project called Places in Time which lets users get info about their memories.</p>
-            <img class="card-img-top" src="https://i.imgur.com/wQxevW9.png" alt="Card image cap">
+            <img class="card-img-top" src="../images/PlaceInTime.png" alt="Card image cap">
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">This program was made using: 
@@ -118,13 +194,14 @@
           </li>
         </ul>
         <div class="card-body">
-            <a target="_blank" href="https://pint-mijm.herokuapp.com/" class="card-link">Site</a>
+            <!-- <a target="_blank" href="https://pint-mijm.herokuapp.com/" class="card-link">Site</a> -->
             <a target="_blank" href="https://github.com/lex-c/bigpint" class="card-link">GitHub</a>
         </div>
       </div>
+      <br>
       
       <!-- Card 4 -->
-      <div id="fishyfishy" class="card" style="width: 40%;">
+      <div id="fishyfishy" class="card" >
         <div id = "cardText" class="card-body">
             <h5 id="cardTitle" class="card-title">Fish Tracker</h5>
             <p class="card-text">Project four for General Assembly, I made a simple Django app called Fishy-Fishy that allows you to track fish.</p>
@@ -140,11 +217,12 @@
             </li>
         </ul>
         <div class="card-body">
-            <a target="_blank" href="https://fishyfishy-py.herokuapp.com/" class="card-link">Site</a>
+            <!-- <a target="_blank" href="https://fishyfishy-py.herokuapp.com/" class="card-link">Site</a> -->
             <a target="_blank" href="https://github.com/willcrawf/fishy-fishy" class="card-link">GitHub</a>
         </div>
     </div>
 </div>
+
 
 </div>
 <!--Navigation bar-->   
